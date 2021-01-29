@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
   name: "Socketkit",
   platforms: [
-    .iOS(.v12_1),
+    .iOS(.v12),
     .tvOS(.v12),
     .watchOS(.v6),
     .macOS(.v10_15)
