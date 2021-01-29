@@ -63,7 +63,7 @@ platform :ios do
           "Configs/SocketkitTests.plist", 
           "Example/Resources/Info.plist"
         ],
-        message: "Socketkit Version #{version} 🚀"
+        message: "chore: release version #{version} 🚀"
     )
   end
 
@@ -93,7 +93,8 @@ platform :ios do
     carthage(
       command: "build", 
       no_skip_current: true, 
-      cache_builds: true
+      cache_builds: true,
+      platform: "iOS,Mac,watchOS"
     )
     # Pod lib lint to ensure CocoaPods compatibility
     pod_lib_lint(allow_warnings: true)

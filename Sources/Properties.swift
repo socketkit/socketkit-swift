@@ -39,7 +39,7 @@ public class Properties {
     let watchDevice = WKInterfaceDevice.current()
     p["$os"] = watchDevice.systemName
     p["$os_version"] = watchDevice.systemVersion
-    p["$watch_model"] = AutomaticProperties.watchModel()
+    p["$watch_model"] = Properties.watchModel()
     let screenSize = watchDevice.screenBounds.size
     p["$screen_width"] = Int(screenSize.width)
     p["$screen_height"] = Int(screenSize.height)

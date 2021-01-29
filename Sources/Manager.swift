@@ -12,7 +12,7 @@ final class Manager {
   
   static let shared = Manager()
   
-  private var options: Options? = nil
+  private var options: Options?
   private let storage = Storage()
   
   init() {}
