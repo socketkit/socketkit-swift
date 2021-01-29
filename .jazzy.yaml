@@ -1,0 +1,7 @@
+# Socketkit document generator jazzy settings
+
+copyright: Copyright 2021 Socketkit, Inc
+author: Yagiz Nizipli
+xcodebuild_arguments: [-target, Socketkit-iOS]
+clean: true
+output: ./Documentation
