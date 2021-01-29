@@ -24,19 +24,12 @@ platform :ios do
     push_git_tags()
     # Push Git commit
     push_to_git_remote()
-    # Pod push / Pod trunk
-    pod_push()
   end
 
   desc "Increment Version"
   lane :increment do |options|
     # Retrieve Version from options
     version = options[:version]
-    # Set Podspec version
-    version_bump_podspec(
-      path: "Socketkit.podspec", 
-      version_number: version
-    )
     # Set Framework plist version
     set_info_plist_value(
       path: "Configs/Socketkit.plist", 
@@ -89,8 +82,6 @@ platform :ios do
 
   desc "Run Dependency-Manager compatibility tests"
   lane :compatibilityTests do
-    # Pod lib lint to ensure CocoaPods compatibility
-    pod_lib_lint(allow_warnings: true)
     # SPM Build to ensure Swift Package Manager compatibility
     spm(command: "build")
     # Delete SPM build artifacts

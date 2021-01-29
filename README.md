@@ -6,12 +6,6 @@
    <a href="https://developer.apple.com/swift/">
       <img src="https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat" alt="Swift 5.2">
    </a>
-   <a href="http://cocoapods.org/pods/socketkit">
-      <img src="https://img.shields.io/cocoapods/v/socketkit.svg?style=flat" alt="Version">
-   </a>
-   <a href="http://cocoapods.org/pods/socketkit">
-      <img src="https://img.shields.io/cocoapods/p/socketkit.svg?style=flat" alt="Platform">
-   </a>
    <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
    </a>
@@ -33,15 +27,6 @@ Privacy and security focused mobile analytics & subscription management for iOS.
 The example application is the best way to see `socketkit` in action. Simply open the `socketkit.xcodeproj` and run the `Example` scheme.
 
 ## Installation
-
-### CocoaPods
-
-socketkit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```bash
-pod 'socketkit'
-```
 
 ### Swift Package Manager
 
