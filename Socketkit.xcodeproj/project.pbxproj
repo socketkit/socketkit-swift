@@ -878,6 +878,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-iOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -910,6 +911,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-iOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -939,6 +941,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-tvOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -969,6 +972,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-tvOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -999,6 +1003,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-watchOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1029,6 +1034,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-watchOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1062,6 +1068,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-macOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1093,6 +1100,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit.Socketkit-macOS";
 				PRODUCT_NAME = Socketkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1236,6 +1244,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1258,6 +1267,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.socketkit-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
