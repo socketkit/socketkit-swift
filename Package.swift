@@ -6,9 +6,9 @@ let package = Package(
   name: "Socketkit",
   platforms: [
     .iOS(.v12_1),
-    .tvOS(.v9),
+    .tvOS(.v14),
     .watchOS(.v2),
-    .macOS(.v10_10)
+    .macOS(.v10_15)
   ],
   products: [
     .library(
