@@ -1,5 +1,5 @@
 <p align="center">
-   <img height="100" src="https://cdn.socketkit.com/assets/socketkit-icon-with-name.png" alt="Socketkit Logo">
+   <img height="100" src="https://cdn.socketkit.com/assets/icon-long.png" alt="Socketkit, Inc.">
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 
 ### Usage
 
-```
+```swift
 import Socketkit
 
 @UIApplicationMain
