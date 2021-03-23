@@ -20,39 +20,40 @@ public class Properties {
   
   static var all: [String: Any] = {
     var p: [String: Any] = [:]
+    
     #if os(iOS) || os(tvOS)
     let screenSize = UIScreen.main.bounds.size
-    p["$screen_height"] = Int(screenSize.height)
-    p["$screen_width"] = Int(screenSize.width)
-    p["$os"] = UIDevice.current.systemName
-    p["$os_version"] = UIDevice.current.systemVersion
+    p["screen_height"] = Int(screenSize.height)
+    p["screen_width"] = Int(screenSize.width)
+    p["os"] = UIDevice.current.systemName
+    p["os_version"] = UIDevice.current.systemVersion
     
     #elseif os(macOS)
     if let screenSize = NSScreen.main?.frame.size {
-      p["$screen_height"] = Int(screenSize.height)
-      p["$screen_width"] = Int(screenSize.width)
+      p["screen_height"] = Int(screenSize.height)
+      p["screen_width"] = Int(screenSize.width)
     }
-    p["$os"] = "macOS"
-    p["$os_version"] = ProcessInfo.processInfo.operatingSystemVersionString
+    p["os"] = "macOS"
+    p["os_version"] = ProcessInfo.processInfo.operatingSystemVersionString
     
     #elseif os(watchOS)
     let watchDevice = WKInterfaceDevice.current()
-    p["$os"] = watchDevice.systemName
-    p["$os_version"] = watchDevice.systemVersion
-    p["$watch_model"] = Properties.watchModel()
+    p["os"] = watchDevice.systemName
+    p["os_version"] = watchDevice.systemVersion
+    p["watch_model"] = Properties.watchModel()
     let screenSize = watchDevice.screenBounds.size
-    p["$screen_width"] = Int(screenSize.width)
-    p["$screen_height"] = Int(screenSize.height)
-    
+    p["screen_width"] = Int(screenSize.width)
+    p["screen_height"] = Int(screenSize.height)
     #endif
     
     let infoDict = Bundle.main.infoDictionary
     if let infoDict = infoDict {
-      p["$app_build_number"] = infoDict["CFBundleVersion"]
-      p["$app_version_string"] = infoDict["CFBundleShortVersionString"]
+      p["app_build_number"] = infoDict["CFBundleVersion"]
+      p["app_version_string"] = infoDict["CFBundleShortVersionString"]
     }
-    p["$manufacturer"] = "Apple"
-    p["$model"] = Properties.deviceModel()
+    p["manufacturer"] = "Apple"
+    p["model"] = Properties.deviceModel()
+    
     return p
   }()
   

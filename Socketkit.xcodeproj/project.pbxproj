@@ -39,6 +39,11 @@
 		954868DF25C405730031BFAF /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954868DD25C405730031BFAF /* Security.swift */; };
 		954868E025C405730031BFAF /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954868DD25C405730031BFAF /* Security.swift */; };
 		954868E125C405730031BFAF /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954868DD25C405730031BFAF /* Security.swift */; };
+		959E7CB02609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E7CAF2609CD2A00F4AEA8 /* NetworkTarget.swift */; };
+		959E7CB12609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E7CAF2609CD2A00F4AEA8 /* NetworkTarget.swift */; };
+		959E7CB22609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E7CAF2609CD2A00F4AEA8 /* NetworkTarget.swift */; };
+		959E7CB32609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E7CAF2609CD2A00F4AEA8 /* NetworkTarget.swift */; };
+		959E7CCB2609DBC000F4AEA8 /* Socketkit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 959E7CCA2609DBC000F4AEA8 /* Socketkit.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,8 @@
 		954868BD25C4005D0031BFAF /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		954868C925C401E00031BFAF /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		954868DD25C405730031BFAF /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		959E7CAF2609CD2A00F4AEA8 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		959E7CCA2609DBC000F4AEA8 /* Socketkit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Socketkit.plist; sourceTree = "<group>"; };
 		95F1075D25C3DF500006902F /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,11 +237,8 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				954868B125C3FB740031BFAF /* Manager.swift */,
-				954868BD25C4005D0031BFAF /* Properties.swift */,
-				954868DD25C405730031BFAF /* Security.swift */,
+				959E7CBB2609D5FD00F4AEA8 /* Internal */,
 				3D9C42A122745900000A6585 /* Socketkit.swift */,
-				954868C925C401E00031BFAF /* Storage.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -255,6 +259,7 @@
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
 				3D9C43252274629B000A6585 /* ViewController.swift */,
 				3D9C4333227462B9000A6585 /* Resources */,
+				959E7CCA2609DBC000F4AEA8 /* Socketkit.plist */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -267,6 +272,18 @@
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		959E7CBB2609D5FD00F4AEA8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				954868B125C3FB740031BFAF /* Manager.swift */,
+				959E7CAF2609CD2A00F4AEA8 /* NetworkTarget.swift */,
+				954868BD25C4005D0031BFAF /* Properties.swift */,
+				954868DD25C405730031BFAF /* Security.swift */,
+				954868C925C401E00031BFAF /* Storage.swift */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,6 +587,7 @@
 			files = (
 				3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */,
 				3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */,
+				959E7CCB2609DBC000F4AEA8 /* Socketkit.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +676,7 @@
 				954868BE25C4005D0031BFAF /* Properties.swift in Sources */,
 				954868CA25C401E00031BFAF /* Storage.swift in Sources */,
 				3D9C42A222745900000A6585 /* Socketkit.swift in Sources */,
+				959E7CB02609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */,
 				954868B225C3FB740031BFAF /* Manager.swift in Sources */,
 				954868DE25C405730031BFAF /* Security.swift in Sources */,
 			);
@@ -670,6 +689,7 @@
 				954868BF25C4005D0031BFAF /* Properties.swift in Sources */,
 				954868CB25C401E00031BFAF /* Storage.swift in Sources */,
 				3D9C42B1227459C1000A6585 /* Socketkit.swift in Sources */,
+				959E7CB12609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */,
 				954868B325C3FB740031BFAF /* Manager.swift in Sources */,
 				954868DF25C405730031BFAF /* Security.swift in Sources */,
 			);
@@ -682,6 +702,7 @@
 				954868C025C4005D0031BFAF /* Properties.swift in Sources */,
 				954868CC25C401E00031BFAF /* Storage.swift in Sources */,
 				3D9C42BF227459F6000A6585 /* Socketkit.swift in Sources */,
+				959E7CB22609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */,
 				954868B425C3FB740031BFAF /* Manager.swift in Sources */,
 				954868E025C405730031BFAF /* Security.swift in Sources */,
 			);
@@ -694,6 +715,7 @@
 				954868C125C4005D0031BFAF /* Properties.swift in Sources */,
 				954868CD25C401E00031BFAF /* Storage.swift in Sources */,
 				3D9C42CD22745A28000A6585 /* Socketkit.swift in Sources */,
+				959E7CB32609CD2A00F4AEA8 /* NetworkTarget.swift in Sources */,
 				954868B525C3FB740031BFAF /* Manager.swift in Sources */,
 				954868E125C405730031BFAF /* Security.swift in Sources */,
 			);

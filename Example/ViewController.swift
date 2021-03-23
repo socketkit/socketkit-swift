@@ -39,5 +39,4 @@ class ViewController: UIViewController {
   override func loadView() {
     self.view = self.label
   }
-  
 }

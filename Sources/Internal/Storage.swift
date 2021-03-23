@@ -12,6 +12,16 @@ final class Storage {
   
   private let defaults = UserDefaults.init(suiteName: "socketkit_client")
   
+  var client_id: String {
+    if let client_id = get("client_id") as? String {
+      return client_id
+    }
+    
+    let client_id = UUID().uuidString
+    set("client_id", value: client_id)
+    return client_id
+  }
+  
   func set(_ key: String, value: Any?) {
     defaults?.setValue(value, forKey: key)
   }

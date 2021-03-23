@@ -44,6 +44,27 @@ Alternatively navigate to your Xcode project, select `Swift Packages` and click 
 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate socketkit into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
+### Usage
+
+```
+import Socketkit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    // Make sure that you've added your Socketkit.plist file as your resource.
+    Socketkit.configure(with: application)
+    
+    // Track custom events using the following code
+    Socketkit.track(.custom(name: "hello_from_socketkit"), properties: ["attribute": "value"])
+    
+    return true
+  }
+}
+```
+
 ## Contributing
 Contributions are very welcome 🙌
 
